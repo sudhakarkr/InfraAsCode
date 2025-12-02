@@ -1,0 +1,30 @@
+# Cloud Provider Configuration
+# Options: "aws", "gcp", "azure"
+cloud_provider = "aws"
+project_name   = "hackathon"
+
+# AWS Configuration
+aws_region         = "us-east-1"
+availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
+
+# GCP Configuration (if using GCP)
+# gcp_project_id = "your-gcp-project-id"
+# gcp_region     = "us-central1"
+
+# Azure Configuration (if using Azure)
+# azure_subscription_id = "your-azure-subscription-id"
+# azure_region          = "eastus"
+
+# Networking
+vpc_cidr = "10.0.0.0/16"
+
+# Kubernetes
+kubernetes_version  = "1.28"
+node_instance_types = ["t3.medium"]
+
+# Database
+database_name           = "hackathon"
+database_username       = "postgres"
+database_password       = "CHANGE_ME_SECURE_PASSWORD"
+postgres_version        = "16"
+database_instance_class = "db.t3.small"
